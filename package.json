@@ -1,0 +1,23 @@
+{
+  "name": "jordan8888.github.io",
+  "version": "1.0.0",
+  "description": "GitHub Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jordan8888/Jordan8888.github.io.git"
+  },
+  "author": "Jordan Sang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jordan8888/Jordan8888.github.io/issues"
+  },
+  "homepage": "https://github.com/Jordan8888/Jordan8888.github.io#",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
