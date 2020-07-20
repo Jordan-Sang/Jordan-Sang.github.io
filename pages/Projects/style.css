@@ -1,0 +1,30 @@
+main {
+    margin: 1rem 1.5rem;
+}
+
+.project {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+.project * {
+    margin: 0.35rem;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project:hover {
+    background-color: rgba(3, 169, 244, 0.25);
+    color: initial;
+}
+
+.project h2 {
+    text-decoration: underline;
+    color: #03A9F4;
+}
+
+.project h4 {
+    color: rgb(60, 60, 60);
+}
