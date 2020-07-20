@@ -1,5 +1,5 @@
 "use strict";
 
-window.onload = function activateTransitions() {
+document.body.onload = function activateTransitions() {
     document.body.classList.remove('preload');
 };
