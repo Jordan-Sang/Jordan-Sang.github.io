@@ -2,8 +2,8 @@ header {
     width: 100vw;
     height: 3rem;
     font-size: 1rem;
-    background-color: #171717;
-    color: rgba(255, 255, 255, 0.9);
+    background-color: #222222;
+    color: #9D9D9D;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,6 +23,7 @@ header div p {
     display: inline-block;
     padding: 0.75rem;
     user-select: initial;
+    height: 3rem;
     color: inherit;
     transition: color 650ms ease 100ms;
 }
@@ -32,7 +33,12 @@ a, a:visited {
 }
 
 a:hover {
-    color: #03A9F4
+    color: white;
+}
+
+.active {
+    color: white;
+    background-color: #080808;
 }
 
 @media only screen and (max-width: 800px) {
