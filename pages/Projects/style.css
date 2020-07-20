@@ -5,6 +5,7 @@ main {
 .project {
     margin: 0.5rem 0;
     padding: 0.5rem;
+    transition: background-color 600ms ease 25ms;
 }
 
 .project * {
