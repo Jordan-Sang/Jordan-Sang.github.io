@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>General Knowledge Quiz</title>
+    <meta charset="UTF8">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="https://contenttools.co/wp-content/uploads/2016/01/quiz-assessment.png" rel="icon" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>General Knowledge Quiz</h1>
+    </header>
+    <main>
+        <div id="quiz">
+            <script id="templated-content" type="text/x-handlebars-template">
+                <form>
+                {{#each questions}}
+                    <div class="question-container" id="question-{{this.num}}-container">
+                        <p class="question" id="question-{{this.num}}">{{this.num}}. {{this.question}}</p>
+                        <img class="result" src="">
+                        <div class="answers">
+                        {{#each options}}
+                            <div class="option">
+                                <input type="radio" name="question-{{../num}}" id="{{this}}" value="{{this}}">
+                                <label for="{{this}}">{{this}}</label>
+                            </div>
+                        {{/each}}
+                        </div>
+                    </div>
+                {{/each}}
+                <div id="submit-button-container">
+                    <button type="button" value="Submit" id="submit">Submit</button>
+                </div>
+                <div id="results"></div>
+                </form>
+            </script>
+        </div>
+    </main>
+</body>
+</html>

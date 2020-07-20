@@ -1,0 +1,89 @@
+html {
+    font-size: 4.44vw;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    user-select: none;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+table {
+    width: 50vw;
+    height: 80vh;
+    margin: 10vh 25vw;
+    border-collapse: collapse;
+    border-radius: 15px;
+    border-style: hidden;
+    color: lightgrey;
+    box-shadow: 0 0 0 1px;
+    table-layout: fixed;
+    white-space: nowrap;
+    overflow: scroll;
+    text-overflow: ellipsis;
+}
+
+td {
+    border: 2px solid darkgrey;
+    padding: 15px;
+    color: black;
+}
+
+#output {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    user-select: initial;
+}
+
+#operations td {
+    background-color: lightgrey;
+}
+
+#equals {
+    background-color: darkorange;
+    border-radius: 0 0 15px 0;
+}
+
+#zero {
+    border-radius: 0 0 0 15px;
+}
+
+.buttons {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
+    table {
+        width: 60vw;
+        margin: 10vh 20vw;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+    table {
+        width: 70vw;
+        margin: 10vh 15vw;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+    table {
+        width: 80vw;
+        margin: 10vh 10vw;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    table {
+        width: 90vw;
+        margin: 10vh 5vw;
+    }
+}
+
+@media only screen and (min-height: 200px) and (max-height: 500px) {
+    td {
+        padding: 5px;
+    }
+}
