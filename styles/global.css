@@ -8,3 +8,10 @@ html {
     font-size: 24px;
     font-family: Calibri, 'Trebuchet MS', sans-serif
 }
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
