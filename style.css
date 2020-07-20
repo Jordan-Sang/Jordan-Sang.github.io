@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 24px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif
+}
+
+header {
+    width: 100vw;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: #171717;
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    font-size: 1.5rem;
+}
+
+header div {
+    display: inline-block;
+    padding: 1rem;
+    user-select: none;
+}
+
+header div p {
+    display: inline-block;
+    padding: 0.75rem;
+    user-select: initial;
+    color: inherit;
+    transition: color 650ms ease 100ms;
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: #03A9F4
+}
