@@ -5,6 +5,11 @@ html {
     user-select: none;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     box-sizing: border-box;
 }
@@ -57,32 +62,44 @@ td {
 @media only screen and (min-width: 900px) and (max-width: 1100px) {
     table {
         width: 60vw;
-        margin: 10vh 20vw;
+        height: 70vh;
+        margin: 15vh 20vw;
     }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 900px) {
     table {
         width: 70vw;
-        margin: 10vh 15vw;
+        height: 50vh;
+        margin: 20vh 15vw;
     }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 700px) {
     table {
         width: 80vw;
-        margin: 10vh 10vw;
+        height: 50vh;
+        margin: 25vh 10vw;
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 500px) {
+@media only screen and (min-width: 0px) and (max-width: 500px) {
     table {
         width: 90vw;
-        margin: 10vh 5vw;
+        height: 10vh;
+        margin: 25vh 5vw;
     }
 }
 
-@media only screen and (min-height: 200px) and (max-height: 500px) {
+@media only screen and (min-width: 0px) and (max-width: 300px) {
+    table {
+        width: 90vw;
+        height: 5vh;
+        margin: 27.5vh 5vw;
+    }
+}
+
+@media only screen and (min-height: 0px) and (max-height: 500px) {
     td {
         padding: 5px;
     }
