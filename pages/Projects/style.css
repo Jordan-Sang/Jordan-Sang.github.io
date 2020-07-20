@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 24px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif
+}
+
+header {
+    width: 100vw;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: #171717;
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    font-size: 1.5rem;
+}
+
+header div {
+    display: inline-block;
+    padding: 1rem;
+    user-select: none;
+}
+
+header div p {
+    display: inline-block;
+    padding: 0.75rem;
+    user-select: initial;
+    color: inherit;
+    transition: color 650ms ease 100ms;
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: #03A9F4
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        justify-content: center;
+    }
+
+    #title {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    header div {
+        padding: 0;
+    }
+
+    header div p {
+        padding: 0.4rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 275px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 275px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 175px) {
+    header div p {
+        padding: 0.2rem;
+    }
+
+    html {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 125px) {
+    html {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 125px) {
+    html {
+        display: none;
+    }
+}
