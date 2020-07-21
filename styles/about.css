@@ -1,0 +1,16 @@
+main {
+    margin: 1.5rem 1.5rem;
+    line-height: 1.5;
+}
+
+main p {
+    margin: 1rem;
+}
+
+.label {
+    margin-bottom: 0.25rem;
+}
+
+ul {
+    margin: 0 3rem;
+}
