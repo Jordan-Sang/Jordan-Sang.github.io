@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Raleway-Regular;
+    src: url('./fonts/Raleway-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: Raleway-Black;
+    src: url('./fonts/Raleway-Black.ttf'); 
+}
+
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url('./fonts/Raleway-SemiBold.ttf'); 
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url('./fonts/Raleway-Bold.ttf'); 
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v12/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background-color: rgba(212, 63, 141, 0.9);
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}

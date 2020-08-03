@@ -6,6 +6,11 @@ var template = Handlebars.compile(sourceContent);
 
 var context = {
     projects: [{
+        title: 'Login Page with React',
+        date: 'August 2, 2020',
+        description: 'A sample login page that utilizes React.js and LocalStorage',
+        link: './projects/03-Login-Page-with-React/transpiled/index.html'
+    }, {
         title: 'Calculator',
         date: 'July 11, 2020',
         description: 'A simple calculator that operates with vanilla JavaScript',
