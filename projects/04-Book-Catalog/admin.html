@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Catalog</title>
+        <link rel="icon" type="image/ico" href="./images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+        <script src="./main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="left clickable" id="catalog-search"><a href="./search.html">Search Our Catalog</a></h1>
+            <h1 class="right clickable" id="admin-login"><a href="./admin.html">Admin Tools</a></h1>
+        </header>
+        <main>
+            <div class="admin-tools">
+                <div class="book admin-tool">
+                    <p class="clickable tool highlightable" id="add">Add Book</p>
+                </div>
+                <div class="book admin-tool">
+                    <p class="clickable tool highlightable" id="update">Update Book</p>
+                </div>
+                <div class="book admin-tool">
+                    <p class="clickable tool highlightable" id="delete">Delete Book</p>
+                </div>
+            </div>
+            <form class="add main-tool">
+                <div>
+                    <label class="highlightable">Title:</label>
+                    <input type="text" class="selectable title highlightable" />
+                </div>
+                <div>
+                    <label class="highlightable">Author:</label>
+                    <input type="text" class="selectable author highlightable" />
+                </div>
+                <div>
+                    <label class="highlightable">Cover Image (Link):</label>
+                    <input type="text" class="selectable img-link highlightable" />
+                </div>
+                <div>
+                    <label class="highlightable">ID:</label>
+                    <input type="text" readonly class="selectable id highlightable" />
+                </div>
+                <div class="submit-container">
+                    <button type="button" class="clickable submit" id="add-submit">Submit</button>
+                </div>
+            </form>
+            <form class="update main-tool">
+                <div>
+                    <label class="highlightable">Title:</label>
+                    <input type="text" class="selectable title highlightable" />
+                </div>
+                <div>
+                    <label class="highlightable">Author:</label>
+                    <input type="text" class="selectable author highlightable" />
+                </div>
+                <div>
+                    <label class="highlightable">Cover Image (Link):</label>
+                    <input type="text" class="selectable img-link highlightable" />
+                </div>
+                <div>
+                    <label class="highlightable">ID:</label>
+                    <input type="text" class="selectable id highlightable" />
+                </div>
+                <div class="submit-container">
+                    <button type="button" class="clickable submit" id="update-submit">Submit</button>
+                </div>
+            </form>
+            <form class="delete main-tool">
+                <div>
+                    <label class="highlightable">ID:</label>
+                    <input type="text" class="selectable id highlightable" />
+                </div>
+                <div class="submit-container">
+                    <button type="button" class="clickable submit" id="delete-submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

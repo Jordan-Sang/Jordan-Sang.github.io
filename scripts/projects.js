@@ -6,6 +6,11 @@ var template = Handlebars.compile(sourceContent);
 
 var context = {
     projects: [{
+        title: 'Book Catalog',
+        date: 'August 20, 2020',
+        description: 'A book catalog powered by Node.js with the Express.js framework',
+        link: './projects/04-Book-Catalog/index.html'
+    }, {
         title: 'Login Page with React',
         date: 'August 2, 2020',
         description: 'A sample login page that utilizes React.js and LocalStorage',
