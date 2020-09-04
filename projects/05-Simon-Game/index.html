@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simon Game</title>
+    <link href="./media/icon.png" rel="icon" type="image/png">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <p>Score: <span class="score">0</span></p>
+            <p>High Score: <span class="highscore">0</span></p>
+        </div>
+    </header>
+    <main>
+        <div class="color-container clickable green"></div>
+        <div class="color-container clickable red"></div>
+        <div class="color-container clickable yellow"></div>
+        <div class="color-container clickable blue"></div>
+    </main>
+    <div class="button clickable">
+        <p class="power">&#x23FB;</p>
+    </div>
+    <div class="game-over">
+        <div class="x-container">
+            <p class="clickable x">x</p>
+        </div>
+        <div class="game-over-content">
+            <p>Game Over!</p>
+        </div>
+    </div>
+    <div class="error">
+        <p>This game is not supported by your device size. Please try again on a larger device!</p>
+    </div>
+</body>
+</html>

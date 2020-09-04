@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'Unicode Symbols';
+    src: url('./media/font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0;
+    color: black;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    align-self: flex-start;
+    height: 10vh;
+    width: 100vw;
+}
+
+.header-content {
+    display: flex;
+    padding: 2.5vh 4vh;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+}
+
+.header-content p, .header-content span {
+    font-size: 5vh;
+}
+
+main {
+    position: absolute;
+    background-color: black;
+    height: 90vh;
+    width: 90vh;
+    font-size: 0;
+    border-radius: 100%;
+}
+
+main, .color-container {
+    border: 2.25vw solid black;
+}
+
+.color-container {
+    height: 50%;
+    width: 50%;
+    display: inline-block;
+}
+
+.button {
+    position: absolute;
+    display: inline-block;
+    height: 32.5vh;
+    width: 32.5vh;
+    border-radius: 100%;
+    background-color: black;
+    font-size: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.power {
+    font-family: 'Unicode Symbols';
+    color: white;
+    font-size: inherit;
+    height: fit-content;
+    width: fit-content;
+    padding-bottom: 5%;
+}
+
+.game-over {
+    position: absolute;
+    height: 42.5vh;
+    width: 42.5vw;
+    background-color: rgb(37, 37, 37);
+    border: 5px solid black;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+.x-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.game-over-content {
+    width: 100%;
+    height: calc(100% - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    padding-bottom: 10vh;
+}
+
+.game-over div p {
+    font-size: 10vh;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.green {
+    background-color: #17D66F;
+    border-radius: 100% 0 0 0;
+}
+
+.red {
+    background-color: #D31C00;
+    border-radius: 0 100% 0 0;
+}
+
+.yellow {
+    background-color: #EED725;
+    border-radius: 0 0 0 100%;
+}
+
+.blue {
+    background-color: #1D99D9;
+    border-radius: 0 0 100% 0;
+}
+
+.error {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    padding: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.error p {
+    height: fit-content;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+@media only screen and (orientation: portrait) {
+    header {
+        height: 10vw;
+    }
+
+    .header-content {
+        padding: 2.5vw 4vw;
+    }
+
+    .header-content p, .header-content span {
+        font-size: 5vw;
+    }
+
+    main {
+        height: 90vw;
+        width: 90vw;
+    }
+
+    main, .color-container {
+        border: 2.25vh solid black;
+    }
+
+    .button {
+        height: 32.5vw;
+        width: 32.5vw;
+        font-size: 25vw;
+    }
+
+    .game-over div p {
+        font-size: 10vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .game-over {
+        width: 52.5vw;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .game-over {
+        width: 62.5vw;
+        height: 42.5vh;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .game-over {
+        width: 72.5vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 13vw;
+    }
+
+    .header-content p, .header-content span {
+        font-size: 8vw;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .game-over {
+        height: 32.5vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .game-over {
+        height: 22.5vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        height: 14vw;
+    }
+
+    .header-content p, .header-content span {
+        font-size: 9vw;
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    html {
+        font-size: 17vw;
+    }
+
+    header, main, .button {
+        display: none;
+    }
+
+    .error {
+        display: flex;
+    }
+}

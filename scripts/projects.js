@@ -6,6 +6,11 @@ var template = Handlebars.compile(sourceContent);
 
 var context = {
     projects: [{
+        title: 'Simon Game',
+        date: 'September 4, 2020',
+        description: 'An online version of the classic game Simon, operated with vanilla JavaScript',
+        link: './projects/05-Simon-Game/index.html'
+    }, {
         title: 'Book Catalog',
         date: 'August 20, 2020',
         description: 'A book catalog powered by Node.js with the Express.js framework',
