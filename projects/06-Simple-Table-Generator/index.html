@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Table Generator</title>
+        <link href="./style.css" rel="stylesheet" type="text/css">
+        <link href="./icon.png" rel="icon" type="image/png">
+        <script src="./main.js" defer></script>
+    </head>
+    <body>
+        <h1>Simple Table Generator</h1>
+        <table>
+            <tbody class="container">
+                <tr>
+                    <td>
+                        <textarea></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <p onclick="modifyTable('row')">Add Row</p>
+            <p onclick="modifyTable('column')">Add Column</p>
+            <p onclick="resetTable()">Reset Table</p>
+        </div>
+    </body>
+</html>

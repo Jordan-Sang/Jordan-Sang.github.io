@@ -6,6 +6,11 @@ var template = Handlebars.compile(sourceContent);
 
 var context = {
     projects: [{
+        title: 'Simple Table Generator',
+        date: 'February 2, 2021',
+        description: 'An easy-to-use online table generator powered by vanilla JavaScript',
+        link: './projects/06-Simple-Table-Generator/index.html'
+    }, {
         title: 'Simon Game',
         date: 'September 4, 2020',
         description: 'An online version of the classic game Simon, operated with vanilla JavaScript',
