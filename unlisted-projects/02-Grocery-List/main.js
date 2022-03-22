@@ -82,14 +82,14 @@ var available = [{
     }
 ];
 var els = {
-	selected: document.getElementsByClassName("groceries")[0],
+    selected: document.getElementsByClassName("groceries")[0],
     available: document.getElementsByClassName("groceries")[1],
     selectedParent: document.getElementsByClassName("selected")[0],
     availableParent: document.getElementsByClassName("available")[0]
 };
 
 function createItem() {
-	var div = document.createElement("div");
+    var div = document.createElement("div");
     var h3 = document.createElement("h3");
     var img = document.createElement("img");
     var addR = document.createElement("div");
@@ -102,12 +102,12 @@ function createItem() {
 }
 
 function alphabetizeItems() {
-	selected.sort((a, b) => (a.id > b.id ? 1 : -1));
+    selected.sort((a, b) => (a.id > b.id ? 1 : -1));
     available.sort((a, b) => (a.id > b.id ? 1 : -1));
 }
 
 function moveItems() {
-	var id = event.target.parentElement.id;
+    var id = event.target.parentElement.id;
     var index;
     if (selected.findIndex(x => x.id === id) === -1) {
     	index = available.findIndex(x => x.id === id);
@@ -121,17 +121,17 @@ function moveItems() {
 }
 
 function updateQuantities() {
-	els.selectedParent.children[0].innerText = 'Selected Items – ' + selected.length;
+    els.selectedParent.children[0].innerText = 'Selected Items – ' + selected.length;
     els.availableParent.children[0].innerText = 'Available Items – ' + available.length;
 }
 
 function clearLists() {
-	els.selected.innerHTML = '';
+    els.selected.innerHTML = '';
     els.available.innerHTML = '';
 }
 
 function storeLists() {
-	localStorage.setItem('selected', JSON.stringify(selected));
+    localStorage.setItem('selected', JSON.stringify(selected));
     localStorage.setItem('available', JSON.stringify(available));
 }
 
@@ -150,7 +150,7 @@ function downloadLists() {
 function outputLists() {
     var div, i;
 
-	if (selected.length === 0) {
+    if (selected.length === 0) {
     	els.selectedParent.style.display = 'none';
     } else {
         els.selectedParent.style.display = 'initial';
@@ -182,12 +182,12 @@ function outputLists() {
 }
 
 function loadLists() {
-	downloadLists();
+    downloadLists();
     outputLists();
 }
 
 function updateLists() {
-	moveItems();
+    moveItems();
     alphabetizeItems();
     clearLists();
     storeLists();
