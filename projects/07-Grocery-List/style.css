@@ -1,0 +1,83 @@
+html, body {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+  
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+  
+body {
+    padding: 1vw 2vw;
+    overflow: auto;
+}
+  
+h1 {
+    font-family: 'Merriweather Sans', Arial, Helvetica, sans-serif;
+    font-size: 3.5vw;
+    text-align: center;
+}
+  
+h2 {
+    font-family: 'Courgette', cursive, Arial, sans-serif;
+    font-size: 3vw;
+    display: block;
+}
+  
+.groceries {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    height: 13.25vw;
+    width: 100%;
+    padding-bottom: 3.5vh;
+    margin-bottom: 5vh;
+    overflow: hidden;
+    overflow-x: auto;
+}
+  
+.groceries div {
+    height: 12vw;
+    min-width: 12vw;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
+}
+  
+.groceries div h3 {
+    text-align: center;
+    font-size: 85%;
+    width: 90%;
+    margin-bottom: 2.5px;
+    word-wrap: break-word;
+}
+  
+.groceries div img {
+    margin-top: 2.5px;
+    max-width: 75%;
+    height: 65%;
+}
+  
+.groceries div div {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    justify-self: end;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    background: #c0c0c0bf;
+    height: 3vw;
+    min-width: 3vw;
+    font-size: 2.5vw;
+    border-radius: 100%;
+    cursor: pointer;
+    user-select: none;
+}

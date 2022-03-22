@@ -6,6 +6,11 @@ var template = Handlebars.compile(sourceContent);
 
 var context = {
     projects: [{
+        title: 'Grocery List',
+        date: 'March 21, 2022',
+        description: 'A versatile and minimalistic grocery list that utilizes vanilla JavaScript',
+        link: './projects/07-Grocery-List/index.html'
+    }, {
         title: 'Simple Table Generator',
         date: 'February 2, 2021',
         description: 'An easy-to-use online table generator powered by vanilla JavaScript',
