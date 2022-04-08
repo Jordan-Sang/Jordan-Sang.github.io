@@ -6,6 +6,11 @@ var template = Handlebars.compile(sourceContent);
 
 var context = {
     projects: [{
+        title: 'Terminal Trivia',
+        date: 'April 8, 2022',
+        description: 'A simulated terminal quiz utilizing Javascript and DOM manipulation',
+        link: './projects/07-Terminal-Trivia/index.html'
+    }, {
         title: 'Simple Table Generator',
         date: 'February 2, 2021',
         description: 'An easy-to-use online table generator powered by vanilla JavaScript',

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #171717;
+    padding: 3vh 0 2.5vh 0;
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2ce214;
+}
+
+grammarly-desktop-integration {
+    display: none;
+}
+
+div {
+    display: flex;
+    padding: 1vh 3vh 1.75vh 3vh;
+    user-select: none;
+}
+
+span {
+    margin-right: 2vw;
+}
+
+.input div, .output div {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+}
+
+p, input {
+    display: inline-block;
+    width: inherit;
+    height: auto;
+    overflow: hidden;
+    user-select: text;
+}
+
+p::selection, input::selection {
+    background: #555555;
+}
+
+input {
+    background: inherit;
+    overflow: hidden;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-transform: inherit;
+    caret-color: #2ce214;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input {
+    padding-top: 0.25vh;
+    margin-bottom: 1.25vh;
+}
+
+.input span {
+    visibility: hidden;
+}
