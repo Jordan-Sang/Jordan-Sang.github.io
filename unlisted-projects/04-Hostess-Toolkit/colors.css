@@ -1,0 +1,17 @@
+body {
+    background: white;
+}
+
+body, .tool {
+    color: black;
+}
+
+.active {
+    color: red;
+    text-shadow: 1px 0px 0px red;
+}
+
+.sat {
+    color: lightgrey;
+    text-shadow: none;
+}

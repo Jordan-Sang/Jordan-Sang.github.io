@@ -1,0 +1,24 @@
+html {
+    font-size: 2.439vw;
+    font-family: DIN, Arial, Verdana, sans-serif;
+}
+
+.station {
+    font-family: DIN-Bold, Arial, Verdana, sans-serif;
+}
+
+.tool {
+    font-family: symbol, symbol2;
+}
+
+.num {
+    font-family: DIN-Bold, Arial, Verdana, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.clickable {
+    cursor: pointer;
+}

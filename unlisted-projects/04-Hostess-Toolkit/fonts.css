@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'symbol';
+    src: url(./symbol.woff);
+}
+
+@font-face {
+    font-family: 'symbol2';
+    src: url(./symbol2.woff);
+}
+
+@font-face {
+    font-family: 'DIN';
+    src: url(./DIN.woff2);
+}
+
+@font-face {
+    font-family: 'DIN-Bold';
+    src: url(./DIN-Bold.woff2);
+}
